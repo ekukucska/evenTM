@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,11 +12,11 @@
     <!-- Load Bootstrap Icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <!-- Load Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="eventscards.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -54,13 +54,13 @@
             <a class="nav-link" href="./search.html">Evenimente</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./signout.html">Favorite</a>
+            <a class="nav-link" href="favourites.html">Favorite</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./signin.html">Autentificare</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="signup.html">Înregistrare</a>
+            <a class="nav-link" href="./signup.html">Înregistrare</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./signout.html">Deconectare</a>
@@ -71,17 +71,67 @@
 
     <!-- MAIN CONTENT -->
     <div id="content" class="container mt-5">
-      <p class="title">Deconectare</p>
-      <p class="text">Sigur doriți să vă deconectați?</p>
-      <br />
-      <!-- Add Sign out button -->
-      <button class="btn btn-custom">Deconectare</button>
+      <p class="title">Favorite</p>
+      <div class="event-card">
+        <img
+          src="../assets/images/eveniment_concert.jpg"
+          alt="Concert Rock"
+          class="img-fluid"
+        />
+        <div>
+          <div class="title-container">
+            <i class="bi bi-star-fill star-icon"></i>
+            <h2 class="event-title">Concert Rock</h2>
+          </div>
+          <p class="event-date">Data și ora: 12 Decembrie 2024, 20:00</p>
+          <p class="event-description">
+            Un spectacol incredibil cu trupa ta preferată de rock live, plin de
+            energie și emoție.
+          </p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img
+          src="../assets/images/eveniment_muzeu.jpg"
+          alt="Expoziție de Artă"
+          class="img-fluid"
+        />
+        <div>
+          <div class="title-container">
+            <i class="bi bi-star-fill star-icon"></i>
+            <h2 class="event-title">Expoziție de Artă</h2>
+          </div>
+          <p class="event-date">Data și ora: 18 Decembrie 2024, 10:00</p>
+          <p class="event-description">
+            Descoperă capodopere uimitoare ale artiștilor locali și
+            internaționali.
+          </p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img
+          src="../assets/images/eveniment_cinema.jpg"
+          alt="Festival de Film"
+          class="img-fluid"
+        />
+        <div>
+          <div class="title-container">
+            <i class="bi bi-star-fill star-icon"></i>
+            <h2 class="event-title">Festival de Film</h2>
+          </div>
+          <p class="event-date">Data și ora: 24 Decembrie 2024, 18:00</p>
+          <p class="event-description">
+            Bucură-te de cele mai bune filme independente într-o atmosferă
+            relaxată.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container text-center">
-        <p>&copy; 2024 My App. All Rights Reserved.</p>
+        <p>&copy; 2024 My App. Toate drepturile rezervate.</p>
       </div>
     </footer>
 

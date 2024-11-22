@@ -1,0 +1,21 @@
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--black-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.form-control {
+  background-color: var(--black-bg);
+  color: var(--white-text);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--highlight-color);
+  border-color: var(--highlight-color);
+}
