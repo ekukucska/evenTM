@@ -1,0 +1,120 @@
+/* Define color variables */
+:root {
+  --black-bg: black;
+  --border-color: #444;
+  --white-text: #ccc;
+  --highlight-color: #007bff;
+  --yellow-color: yellow;
+  --blue-color: blue;
+  --text-grey: #ccc;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--black-bg);
+  color: var(--white-text);
+}
+
+.logo {
+  height: 80px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--black-bg);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Center title in navbar */
+.navbar-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Centered title styling */
+.navbar-title .even {
+  color: var(--yellow-color);
+}
+
+.navbar-title .tm {
+  color: var(--blue-color);
+}
+
+/* Navbar collapse alignment */
+.navbar-collapse {
+  background-color: var(--black-bg);
+}
+
+/* Navbar items pushed to the right */
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+  color: #ccc !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--highlight-color);
+}
+
+/* Main content */
+#content {
+  min-height: calc(100vh - 160px);
+  padding: 20px;
+  background-color: var(--black-bg);
+  color: var(--white-text);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 48px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--black-bg) !important;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--white-text) !important;
+}
+
+/* text content */
+.even {
+  color: var(--yellow-color);
+}
+
+.tm {
+  color: var(--blue-color);
+}
+
+.text {
+  font-size: 20px;
+  color: #ccc !important;
+}
+
+.subtitle {
+  color: var(--yellow-color);
+  font-size: 20px;
+}
+
+.title {
+  color: var(--yellow-color);
+  font-size: 32px;
+}
