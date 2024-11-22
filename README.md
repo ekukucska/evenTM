@@ -28,6 +28,3 @@ open index.html
 This project is licensed under the MIT License.
 
 ---
-
-**Author:** [Your Name]  
-**Faculty:** Computer Science Faculty, Tibiscus University, Timisoara
