@@ -16,6 +16,7 @@
     />
     <!-- Load Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="eventscards.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -25,12 +26,10 @@
         <img src="../assets/images/eTM_logo.png" alt="Logo" class="logo" />
       </a>
 
-
       <!-- Centered Title -->
       <div class="navbar-title">
         <span class="even">even</span><span class="tm">TM</span>
       </div>
-
 
       <!-- Hamburger menu button on the right -->
       <button
@@ -45,90 +44,96 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-
       <!-- Menu links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="search.html">Search</a></li>
-          <li class="nav-item"><a class="nav-link" href="./bookmarks.html">Bookmarks</a></li>
-          <li class="nav-item"><a class="nav-link" href="./signin.html">Sign In</a></li>
-          <li class="nav-item"><a class="nav-link" href="./signup.html">Sign Up</a></li>
-          <li class="nav-item"><a class="nav-link" href="./signout.html">Sign Out</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Acasă</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Evenimente</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./favourites.html">Favorite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./signin.html">Autentificare</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./signup.html">Înregistrare</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./signout.html">Deconectare</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-
     <!-- MAIN CONTENT -->
     <div id="content" class="container mt-5">
-      <p class="title">Search</p>
-      <p>
-        <span class="text">Bine ai venit pe</span>
-        <span class="event">event</span><span class="tm">TM</span>
-        <span class="text">
-          - portalul tău pentru evenimente din Timișoara!</span
-        >
-      </p>
-      <br />
-      <!-- Additional Text Section -->
-      <p class="text">
-        <strong class="subtitle">Ce vă oferim?</strong><br />
-        <ul>
-          <li>
-            Evenimente Curate: O selecție atentă a celor mai bune evenimente
-            din Timișoara.
-          </li>
-          <li>
-            Categorii Diverse: De la muzică și artă, la sport și tehnologie,
-            avem ceva pentru toată lumea.
-          </li>
-          <li>
-            Informații Detaliate: Detalii complete despre locații, ore și
-            bilete, astfel încât să vă puteți planifica ușor timpul liber.
-          </li>
-          <li>
-            Experiență Personalizată: Recomandări personalizate bazate pe
-            interesele dvs. și evenimentele favorite.
-          </li>
-        </ul>
-        <br /><br />
-
-
-        <strong class="subtitle">Cum funcționează?</strong><br />
-        <ul>
-          <li>
-            Explorați Evenimentele: Răsfoiți prin lista noastră extinsă de
-            evenimente și descoperiți ce se potrivește cu interesele dvs.
-          </li>
-          <li>
-            Selectați Favoritele: Adăugați evenimentele preferate la lista dvs.
-            de favorite pentru a nu pierde nicio ocazie.
-          </li>
-          <li>
-            Participați și Bucurați-vă: Rezervați-vă biletele și pregătiți-vă
-            să creați amintiri de neuitat!
-          </li>
-        </ul>
-        <br /><br />
-
-
-        <strong class="subtitle">Alăturați-vă Comunității noastre!</strong
-        ><br />
-        Creați-vă un cont pentru a primi recomandări personalizate, alerte
-        pentru evenimente și multe altele. Nu ratați niciun moment special în
-        Timișoara – alăturați-vă evenTM astăzi!
-      </p>
+      <p class="title">Evenimente</p>
+      <div class="event-card">
+        <img
+          src="../assets/images/eveniment_cinema.jpg"
+          alt="Festival de Film"
+          class="img-fluid"
+        />
+        <div>
+          <div class="title-container">
+            <i class="bi bi-star star-icon"></i>
+            <h2 class="event-title">Festival de Film</h2>
+          </div>
+          <p class="event-date">Data și ora: 24 Decembrie 2024, 18:00</p>
+          <p class="event-description">
+            Bucură-te de cele mai bune filme independente într-o atmosferă
+            relaxată.
+          </p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img
+          src="../assets/images/eveniment_concert.jpg"
+          alt="Concert Rock"
+          class="img-fluid"
+        />
+        <div>
+          <div class="title-container">
+            <i class="bi bi-star-fill star-icon"></i>
+            <h2 class="event-title">Concert Rock</h2>
+          </div>
+          <p class="event-date">Data și ora: 12 Decembrie 2024, 20:00</p>
+          <p class="event-description">
+            Un spectacol incredibil cu trupa ta preferată de rock live, plin de
+            energie și emoție.
+          </p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img
+          src="../assets/images/eveniment_muzeu.jpg"
+          alt="Expoziție de Artă"
+          class="img-fluid"
+        />
+        <div>
+          <div class="title-container">
+            <i class="bi bi-star star-icon"></i>
+            <h2 class="event-title">Expoziție de Artă</h2>
+          </div>
+          <p class="event-date">Data și ora: 18 Decembrie 2024, 10:00</p>
+          <p class="event-description">
+            Descoperă capodopere uimitoare ale artiștilor locali și
+            internaționali.
+          </p>
+        </div>
+      </div>
     </div>
-
 
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container text-center">
-        <p>&copy; 2024 My App. All Rights Reserved.</p>
+        <p>&copy; 2024 My App. Toate drepturile rezervate.</p>
       </div>
     </footer>
-
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -1,0 +1,16 @@
+.btn-custom {
+  background-color: var(--yellow-color);
+  color: var(--black-bg);
+  font-weight: bold;
+  border: 1px solid var(--yellow-color);
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: var(--blue-color);
+  color: var(--white-text);
+  border-color: var(--blue-color);
+}
