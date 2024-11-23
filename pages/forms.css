@@ -19,3 +19,15 @@
   box-shadow: 0 0 5px var(--highlight-color);
   border-color: var(--highlight-color);
 }
+
+.form-container {
+  width: 50vw;
+  margin: 0;
+  text-align: left;
+}
+
+.form-fixed-container {
+  max-width: 300px;
+  margin: 0;
+  text-align: left;
+}
